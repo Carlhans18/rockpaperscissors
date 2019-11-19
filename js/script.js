@@ -16,6 +16,9 @@ $("document").ready(function(){
        if (computer === userChoice) {
           $("#result").text("tied") 
        }
+       else if (computer==="scissor" && userChoice==="rock"){
+        $("#result").text("won")
+       }
     });
 });
 
