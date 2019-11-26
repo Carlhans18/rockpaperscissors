@@ -19,6 +19,21 @@ $("document").ready(function(){
        else if (computer==="scissor" && userChoice==="rock"){
         $("#result").text("won")
        }
+       else if (computer==="scissor" && userChoice==="paper"){
+        $("#result").text("lose")
+       }
+       else if (computer==="paper" && userChoice==="rock"){
+        $("#result").text("lose")
+       }
+       else if (computer==="rock" && userChoice==="scissor"){
+        $("#result").text("lose")
+       }
+       else if (computer==="rock" && userChoice==="paper"){
+        $("#result").text("won")
+       }
+       else if (computer==="paper" && userChoice==="scissor"){
+        $("#result").text("won")
+       }
     });
 });
 
