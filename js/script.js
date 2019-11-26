@@ -7,6 +7,12 @@
 $("document").ready(function(){
     $("#shoot").click(function(){
         // click actions happen here
+        if (($("#input").val() !="paper") ||  ($("#input").val() !="rock") || ($("#input").val() !="scissor") ) {
+            let userChoice = "Not valibChoice";
+            $("#userChoice").text(`${userChoice}`);
+        }
+        else {
+
        let userChoice = $("#input").val(); 
        $("#userChoice").text(`${userChoice}`);
        let computerChoices = ["rock","paper", "scissor"];
@@ -34,6 +40,7 @@ $("document").ready(function(){
        else if (computer==="paper" && userChoice==="scissor"){
         $("#result").text("won")
        }
+    }
     });
 });
 
